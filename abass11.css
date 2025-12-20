@@ -1,0 +1,314 @@
+  :root{
+ --dark-color:#19283f;
+--green-color:#33d1cc;
+ --red-color:#ff3150  ;
+    --yellow-color:#ffc400  ;
+  }
+   body{
+font-family: "roboto"/ sans-serif;
+ 
+
+   }
+   .main-btn{
+background-color: var(--red-color);
+color: var(--yellow-color);
+padding: 0.5rem 1rem;
+   }
+   .main-btn:hover{
+color: var(--yellow-color);
+background-color: var(--red-color);
+   }
+   /* start navbar*/
+.navbar{
+ height: 126px;
+background-color: var(--dark-color);
+
+}
+.navbar-brand img{
+width: 100px;
+height: 100px;
+      
+}
+.navbar-nav .nav-item .nav-link{
+
+color: #fff;
+
+}
+.navbar-nav .nav-item .nav-link.active   ,.navbar-nav .nav-item .nav-link:focus, .navbar-nav .nav-item .nav-link:hover {
+
+color: var(--green-color);
+
+}
+.navbar .search{
+
+    border-left: 1px solid var(--green-color);
+
+}
+ .navbar .search    {
+color: var(--green-color);
+
+ }
+
+.navbar-toggler:focus{
+ box-shadow: none;
+
+} 
+.navbar-toggler[aria-expanded="true"]  {
+
+    border-color: var(--green-color);
+}
+
+ 
+
+.navbar .navbar-toggler{
+ 
+color: #fff;
+font-size: 25px;
+border: 1px solid #fff;
+}
+ 
+   /* end navbar*/
+   /*start landing*/
+.landing{
+background-color: var(--dark-color);
+min-height:calc(100vh - 126px) ;
+ 
+}
+ 
+   /*end landing*/
+   /* start features*/
+#icon{
+font-size:35px;
+margin-bottom: 4px;
+
+}
+.main-title::after {
+    content: " " !important;
+    width: 120px !important;
+    height: 2px !important;
+    background-color: var(--red-color) !important;
+    position: absolute !important;
+    bottom: -20px !important;
+    left: 50% !important;
+    transform:  translateX(-50%)  ;
+   display: inline-block !important;
+
+}
+#icon1{
+
+font-size: 40px;
+color:var(--green-color)
+}
+.feat h4{
+
+    color: var(--yellow-color);
+}
+
+
+
+    /* end features*/
+    /* start our work*/
+.our-work{
+ 
+    background-color:  rgba(91, 169, 233, 0.719);
+}
+.our-work ul .active{
+background-color: var(--red-color);
+color: var(--yellow-color);
+}
+.our-work ul li {
+
+padding: 0.5rem 1rem;
+cursor: pointer;
+
+}
+.our-work ul li:not(.active):hover{
+color: var(--red-color);
+
+
+}
+.our-work .box{
+
+padding: 5px;
+overflow: hidden;
+position: relative;
+}
+.our-work .box::before{
+content:"aplly";
+position: absolute;
+background-color: rgba(9, 164, 226, 0.438);
+width: calc(100% - 10px);
+height: calc(100% - 10px);
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+color: #fff;
+font-size: 1.5rem;
+transition: 0.3s;
+transform: translateX(calc(-100% - 5px ));
+}
+.our-work .box:hover:before{
+transform: translateX(0) ;
+
+
+}
+ 
+    /* end our work*/
+
+    /*start of stuff*/
+.stuff{
+background-color: #fff;
+
+
+}
+.stuff .description{
+max-width: 400px;
+margin: auto;
+
+}
+ .stuff .img{
+
+margin-top: 20px;
+
+ 
+ } 
+ .stuff .img img{
+margin-left: auto;
+border-radius: 5px;
+
+ }
+     
+ /*end of stuff*/
+ /*start of team*/
+
+.team{
+background-color: #496794;
+
+margin-top: 10px;
+}
+.team .box img{
+border-radius: 8px 8px 0px 0px;
+
+}
+.team .box{
+border-radius: 5px 5px 0;
+
+}
+.team .box h2{
+background-color: var(--green-color);
+padding: 10px;
+
+}
+ 
+ /*end of team*/
+  /*start of tellme*/
+.tellme{
+ 
+ 
+  background:
+    radial-gradient(120px 60px at 15% 20%, rgba(255,255,255,.85), rgba(255,255,255,0) 70%),
+    radial-gradient(160px 80px at 75% 25%, rgba(255,255,255,.82), rgba(255,255,255,0) 70%),
+    radial-gradient(140px 70px at 35% 65%, rgba(255,255,255,.78), rgba(255,255,255,0) 70%),
+    linear-gradient(180deg, #7ad3ff 0%, #b3f3e6 55%, #ecfbff 100%);
+  border-top:1px solid rgba(255,255,255,.35);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+ 
+
+  /*end of tellme*/
+/*start of the teachs*/
+.teachs{
+ padding-bottom: 30px;
+  background:
+    radial-gradient(180px 90px at 85% 10%, rgba(255, 255, 255, .9), rgba(255, 255, 255, 0) 80%),
+    radial-gradient(140px 70px at 10% 70%, rgba(255, 255, 255, .88), rgba(255, 255, 255, 0) 75%),
+    radial-gradient(100px 50px at 60% 30%, rgba(255, 255, 255, .85), rgba(255, 255, 255, 0) 70%),
+    linear-gradient(135deg, #FF66AA 0%, #AA00FF 35%, #00FFFF 75%, #FFFFFF 100%);
+    
+  border-top: 2px solid rgba(255, 255, 255, .5);
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+  
+  min-height: 250px;
+}
+.teachs  .home{
+
+padding: 5px;
+overflow: hidden;
+position: relative;
+}
+.teachs .home::before{
+content:"aplly";
+position: absolute;
+background-color: rgba(60, 226, 9, 0.438);
+width: calc(100% - 10px  );
+height: calc(100% - 10px );
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+color: #fff;
+font-size: 1.5rem;
+transition: 0.3s;
+transform: translatey(calc(-100% - 5px   ));
+}
+.teachs .home:hover:before{
+transform: translateX(0) ;
+
+
+}
+
+ 
+/*end of the teachs*/
+/*start of subscripte*/
+.subscrite{
+background-color: var(--yellow-color);
+
+
+
+}
+.subscrite input{
+
+ border: none;
+background-color: transparent;
+ 
+}
+.subscrite ::placeholder{
+color: #fff;
+ 
+
+
+
+}
+.subscrite input[type="email"]{
+border: none;
+ border-bottom: 2px solid #fff;
+  
+
+}
+
+.subscrite input:focus{
+outline: none;
+
+}
+.subscrite  .subscriptes{
+color: #09d45e;
+background-color: #19283f;
+font-size: 20px;
+font-weight: 500;
+border-radius: 5px;
+padding: 8px;
+}
+
+
+
+/*end of subscripte*/
+/*startof the footer*/
+.footer{
+
+ 
+  background-color: var(--dark-color);
+}
+/*end of footer*/
